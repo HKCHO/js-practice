@@ -20,7 +20,7 @@ public class TestB implements Gamer {
 
   @Override
   public String play() { 
-    int aa = (int) java01e.test55.GameCenter.aScore;
+    int aa = 10;
    
       /*count++;              
       if ((count % 6) == 0) {
