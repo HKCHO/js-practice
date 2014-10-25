@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+//global variables => window의 객체에 소속된다.
+
+var v1;   // window.v1과 같다.
+var v2;
+var op;
+var result = 0;
+
+v1 = parseInt(prompt('첫 번 째 값을 입력하시오'));
+v2 = parseInt(prompt('두 번 째 값을 입력하시오'));
+op = prompt('연산자를 입력하시오');
+
+
+compute();
+
+displayResult();
+
+function compute() {
+	switch(op) {
+	case "+" :result = v1 + v2; break;
+	case "-" :result = v1 - v2; break;
+	case "*" :result = v1 * v2; break;
+	case "/" :result = v1 / v2; break;
+	case "%" :result = v1 % v2; break;
+	default : alert("유효하지 않은 연산자 입니다.");
+	}
+	
+}
+
+function displayResult() {
+	console.log("-----------------");
+	console.log(v1,op,v2,'=',result)
+	console.log("-----------------");
+}
+
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
